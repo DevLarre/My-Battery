@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bateria</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=New+Rocker&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <h1 class="fire-text">My battery</h1>
+
+        <div class="keys">
+            <div class="pratos">
+                <div data-key="keyq" class="key" id="crash">
+                    <p class="description">Q</p>
+                    <img src="assets/img/crash.png" alt="crash" width="70px" class="drumsCymbals">
+                </div>
+                <div data-key="keyw" class="key" id="chinaSplash">
+                    <p class="description">W</p>
+                    <img src="assets/img/splash.png" alt="splash" width="70px" class="drumsCymbals">
+                </div>
+                <div data-key="keye" class="key" id="ride">
+                    <p class="description">E</p>
+                    <img src="assets/img/ride-cymbal.png" alt="ride" width="70px" class="drumsCymbals">
+                </div>
+                <div data-key="keyr" class="key" id="chinaSplash">
+                    <p class="description">R</p>
+                    <img src="assets/img/china.png" alt="china" width="70px" class="drumsCymbals">
+                </div>
+                <div data-key="keyt" class="key" id="crash">
+                    <p class="description">T</p>
+                    <img src="assets/img/crash.png" alt="crash" width="70px" class="drumsCymbals">
+                </div>
+            </div>
+
+            <div class="tom">
+                <div data-key="keya" class="key" id="tomId1">
+                    <p class="description">A</p>
+                    <img src="assets/img/tom1.png" alt="tom1" width="100px" class="tomBattery">
+                </div>
+                <div data-key="keys" class="key" id="tomId2">
+                    <p class="description">S</p>
+                    <img src="assets/img/tom2.png" alt="tom2" width="100px" class="tomBattery">
+                </div>
+                <div data-key="keyd" class="key" id="tomId3">
+                    <p class="description">D</p>
+                    <img src="assets/img/tom3.png" alt="tom3" width="100px" class="tomBattery">
+                </div>
+            </div>
+
+            <div class="kick">
+                <div data-key="keyz" class="key" id="kickId">
+                    <p class="description">Z</p>
+                    <img src="assets/img/kick.png" alt="kick" width="100px" class="kickBattery">
+                </div>
+                <div data-key="keyx" class="key" id="kickId">
+                    <p class="description">X</p>
+                    <img src="assets/img/kick.png" alt="kick" width="100px" class="kickBattery">
+                </div>
+            </div>
+
+            <div class="hi-hat_snare">
+                <div data-key="keyb" class="key" id="hihatSnare">
+                    <p class="description">B</p>
+                    <img src="assets/img/hi-hat.png" alt="snare" width="100px" class="hihat_snare">
+                </div>
+                <div data-key="keyn" class="key" id="hihatSnare">
+                    <p class="description">N</p>
+                    <img src="assets/img/snare-drum.png" alt="snare" width="100px" class="hihat_snare">
+                </div>
+            </div>
+
+            <div class="sticks_cowbell">
+                <div data-key="keyc" class="key" id="cowbell">
+                    <p class="description">C</p>
+                    <img src="assets/img/cowbell.png" alt="cowbell" width="80px" class="sticksCowbell">
+                </div>
+
+                <div data-key="keyv" class="key" id="sticks">
+                    <p class="description">V</p>
+                    <img src="assets/img/sticks.png" alt="sticks" width="80px" class="sticksCowbell">
+                </div>
+            </div>
+        </div>
+
+        <div class="composer">
+            <div class="buttons">
+                <div class="play">
+                    <button>Tocar</button>
+                </div>
+                <div class="stop">
+                    <button>Parar</button>
+                </div>
+                <div class="export">
+                    <button id="exportsound">Download</button>
+                </div>
+                <div class="popup" id="popup">
+                    <div class="popup-content">
+                        <span class="close" id="close">&times;</span>
+                        <p>Em desenvolvimento. Em breve esta funcionalidade estará habilitada.</p>
+                    </div>
+                </div>
+                <div class="start-recording">
+                    <button>Gravar</button>
+                </div>
+                <div class="stop-recording">
+                    <button>Parar Gravação</button>
+                </div>        
+            </div>
+        </div>
+
+        <footer>&copy; Criado por Dev Larré.</footer>
+    </main>
+
+    <audio id="s_keyq" src="sounds/keyq.wav"></audio>
+    <audio id="s_keyw" src="sounds/keyw.wav"></audio>
+    <audio id="s_keye" src="sounds/keye.wav"></audio>
+    <audio id="s_keyr" src="sounds/keyr.wav"></audio>
+    <audio id="s_keyt" src="sounds/keyt.wav"></audio>
+    <audio id="s_keya" src="sounds/keya.wav"></audio>
+    <audio id="s_keys" src="sounds/keys.wav"></audio>
+    <audio id="s_keyd" src="sounds/keyd.wav"></audio>
+    <audio id="s_keyz" src="sounds/keyz.wav"></audio>
+    <audio id="s_keyx" src="sounds/keyx.wav"></audio>
+    <audio id="s_keyc" src="sounds/keyc.wav"></audio>
+    <audio id="s_keyv" src="sounds/keyv.wav"></audio>
+    <audio id="s_keyb" src="sounds/keyb.wav"></audio>
+    <audio id="s_keyn" src="sounds/keyn.wav"></audio>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
